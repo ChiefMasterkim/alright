@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: whitesmoke;
+}
+.container{
+    padding: 0 9%;
+}
+.header{
+    display: flex;
+    padding: 1% 0%;
+    justify-content: space-between;
+    position: sticky;
+}
+.items{
+    display: inline-flex;
+}
+.items li{
+    list-style-type: none;
+    padding: 0 5%;
+   
+}
+.items li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+button{
+    background-color: rgb(209, 209, 14);
+    padding: 0.78rem 1.2rem;
+    border: none;
+    color: black;
+
+}
+.icons{
+    display: none;
+}
+
+.first{
+    background-color: #000;
+    max-width: 60%;
+    font-size: 4rem;
+}
+
+.second{
+    background-color: rgb(0, 0, 0);
+    max-width: 40%;
+    font-size: 1rem;
+    color: gray;
+}
+
+.brand{
+    padding: 5% 0%;
+}
+.building{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:  70% 40% 18% 4% ;
+    grid-gap: 1%;
+    
+
+}
+.roomone{
+    background-color: #000;
+    
+
+}
+.roomtwo{
+    background-color:#000;
+
+
+}
+.roomthree{
+background-color: gray;
+
+}
+.roomfour{
+background-color: grey;
+
+}
+.roomfive{
+background-color: #000;
+grid-column: 1/-1;
+
+}
+.roomfive .subword{
+    max-width: 54%;
+}
+.roomsix{
+    grid-column: 1/-1;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+.svg {
+    display: flex;
+    justify-content: space-between;
+    background: gray;
+    
+
+}
+.svg a{
+    padding: 0 3%;
+    background: gray;
+
+
+}
+.svg a svg{
+    background: gray;
+
+}
+
+
+.word{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+.subword{
+    letter-spacing: 2px;
+    padding: 2% 0;
+
+}
+.roomthree .word,.roomfour .word,.roomthree .subword,.roomfour .subword{
+    background-color: gray;
+    max-width: 80%;
+}
+.container-two{
+    display: flex;
+    justify-content: space-between;
+    background-color:gray;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1050px){
+    .first{
+        background-color: rgb(15, 15, 15);
+        max-width: 70%;
+        font-size: 2rem;
+    }
+}
+.brand{
+    display: flex;
+    justify-content: space-between;
+    padding: 6% 0;
+}
+.brand svg{
+    width: auto;
+}
+
+
+
+
+
+
+
+
+@media (max-width:950px){
+    .icons{
+        display: block;
+    }
+    .items{
+        display: none;
+        position: absolute;
+        top: 99%;left: 0;right: 40%;
+        padding: 0% 8%;
+        text-align: center;
+
+
+
+    }
+    #close_btn{
+        display: none;
+    }
+    .button{
+        display: none;
+        position: absolute;
+        top: 330%;left: 0;right: 20%;
+        padding: 0% 8%;
+        text-align: center;
+
+
+     
+    }
+   
+    .items li{
+        top: 99%;left: 0;right: 0;
+        display: block;
+        background-color: black;
+
+    }
+    .items li a{
+        font-size: small;
+        padding: 0rem 2rem;
+
+    }
+    .first{
+        background-color:#000;
+        max-width: 100%;
+        font-size: 2rem;
+    }
+    .second{
+        background-color:black;
+        max-width: 100%;
+        font-family: serif;
+        font-weight: 900;
+        font-size: 1rem;
+    }
+    .brand{
+        display: block;
+        justify-content: space-between;
+        max-width: 80%;
+        text-align: center;
+        padding: 8%;
+    
+    }
+    .brand svg{
+        width:25%;
+    }
+    .building{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:  20% 20% 26% 25% 13% 3%;
+        grid-gap: 1%;
+        
+    
+    }
+    .roomone{
+        background-color: #000;
+        grid-column: 1/-1;
+
+        
+    
+    }
+    img{
+        max-width: 100%;
+        background-color: #000;
+    }
+    .roomtwo{
+        background-color:rgba(0, 0, 0, 0.986);
+        grid-column: 1/-1;
+
+    
+    
+    }
+    .roomthree{
+    background-color:gray;
+    grid-column: 1/-1;
+    gap: 0;
+    
+    }
+    .roomfour{
+    background-color: gray;
+    grid-column: 1/-1;
+
+    
+    }
+    .roomfive{
+    background-color:rgb(0, 0, 0);
+    grid-column: 1/-1;
+    
+    }
+    .roomfive .subword{
+        max-width: 100%;
+    }
+    .roomsix{
+        background-color: rgb(129, 127, 127);
+        grid-column: 1/-1;
+        box-sizing: border-box;
+        width: 110%;
+        margin-left: -7.8%;
+     
+    
+    }
+    .container-two{
+        display: flex;
+        justify-content: space-between;
+        background-color:gray;
+    }
+    .roomfive .button{
+        display: block;
+        position: relative;
+        top:0%;left: 0;right: 00%;
+        padding: 0% 0%;
+    }
+    .word{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2rem;
+    }
+    .roomthree .word,.roomfour .word,.roomthree .subword,.roomfour .subword{
+        background-color: gray;
+        max-width: 110%;
+    }
+
+}
+@media (max-width:550px){
+    .brand svg{
+        width:35%;
+    }
+
+
+}
